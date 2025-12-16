@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meri Cafe Website</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            scroll-behavior: smooth;
+        }
+
+        h1, h2 {
+            margin: 10px 0;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+        }
+        img {
+            width: 300px;
+            border-radius: 10px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.3);
+            margin-top: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 25px;
+            margin-top: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            font-size: 18px;
+            transition: 0.3s;
+        }
+        .btn:hover {
+            background-color: #45a049;
+            transform: scale(1.05);
+        }
+
+        section {
+            padding: 60px 20px;
+            text-align: center;
+        }
+        #home { background: linear-gradient(to right, #f8b500, #fceabb); }
+        #info { background: linear-gradient(to right, #00c6ff, #0072ff); color: white; }
+        #menu { background: linear-gradient(to right, #ffafbd, #ffc3a0); }
+        #special { background: linear-gradient(to right, #ff9966, #ff5e62); color: white; }
+        #coffee { background: linear-gradient(to right, #f093fb, #f5576c); color: white; }
+        #snacks { background: linear-gradient(to right, #43cea2, #185a9d); color: white; }
+        #gallery { background: linear-gradient(to right, #ffe259, #ffa751); }
+        #contact { background: linear-gradient(to right, #43cea2, #185a9d); color: white; }
+
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: #ff5722;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+        nav a:hover { color: #FFC107; }
+
+        .menu-item {
+            background-color: rgba(255,255,255,0.8);
+            color: #333;
+            padding: 15px;
+            margin: 15px auto;
+            border-radius: 10px;
+            max-width: 400px;
+            box-shadow: 0px 5px 15px rgba(0,0,0,0.2);
+        }
+
+        .contact-form, .booking-form {
+            max-width: 500px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        .contact-form label, .booking-form label {
+            display: block;
+            margin-top: 15px;
+            font-weight: bold;
+        }
+        .contact-form input, .contact-form textarea,
+        .booking-form input, .booking-form select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+        }
+        .contact-form button, .booking-form button {
+            margin-top: 15px;
+            padding: 12px 25px;
+            background-color: #FFC107;
+            color: #333;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .contact-form button:hover, .booking-form button:hover {
+            background-color: #ffb300;
+            transform: scale(1.05);
+        }
+
+        .gallery img {
+            width: 200px;
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+
+<!-- Navigation -->
+<nav>
+    <a href="#home">Home</a>
+    <a href="#info">Info</a>
+    <a href="#menu">Menu</a>
+    <a href="#special">Special Offer</a>
+    <a href="#coffee">Special Coffee</a>
+    <a href="#snacks">Best Snacks</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#contact">Contact</a>
+</nav>
+
+<!-- Home Section -->
+<section id="home">
+    <h1>Welcome to My Cafe</h1>
+    <p>Scroll down to explore our cafe, menu, special offers, and more!</p>
+    <img src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0?auto=format&fit=crop&w=400&q=80" alt="Cafe Image">
+</section>
+
+<!-- Info Section -->
+<section id="info">
+    <h1>Information Page</h1>
+    <p>Here you can see all the details, images, and offers of your cafe..</p>
+    <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=400&q=80" alt="Cafe Info">
+</section>
+
+<!-- Menu Section -->
+<section id="menu">
+    <h1>Our Menu</h1>
+    <div class="menu-item">
+        <h2>Starters</h2>
+        <p>Garlic Bread – ₹120</p>
+        <p>Cheese Nachos – ₹150</p>
+        <p>Tomato Soup – ₹100</p>
+    </div>
+    <div class="menu-item">
+        <h2>Main Course</h2>
+        <p>Margherita Pizza – ₹350</p>
+        <p>Pasta Alfredo – ₹300</p>
+        <p>Paneer Butter Masala – ₹280</p>
+    </div>
+    <div class="menu-item">
+        <h2>Desserts</h2>
+        <p>Chocolate Brownie – ₹180</p>
+        <p>Red Velvet Cake – ₹200</p>
+        <p>Ice Cream Sundae – ₹150</p>
+    </div>
+    <div class="menu-item">
+        <h2>Drinks</h2>
+        <p>Cappuccino – ₹120</p>
+        <p>Cold Coffee – ₹150</p>
+        <p>Fresh Lime Soda – ₹100</p>
+    </div>
+</section>
+
+<!-- Special Offer Section -->
+<section id="special">
+    <h1>Special Offers</h1>
+    <p>Get 20% off on your first coffee order!</p>
+    <p>Happy Hours: 4PM – 6PM, Buy 1 Get 1 Free on all beverages!</p>
+</section>
+
+<!-- Special Coffee Section -->
+<section id="coffee">
+    <h1>Special Coffee</h1>
+    <p>Try our signature Espresso Latte and Cappuccino with special flavors!</p>
+    <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348?auto=format&fit=crop&w=400&q=80" alt="Special Coffee">
+</section>
+
+<!-- Best Snacks Section -->
+<section id="snacks">
+    <h1>Best Snacks</h1>
+    <p>Our top snacks recommended by customers:</p>
+    <img src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?auto=format&fit=crop&w=400&q=80" alt="Best Snack">
+</section>
+
+<!-- Gallery Section -->
+<section id="gallery">
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=300&q=80" alt="Food 1">
+        <img src="https://images.unsplash.com/photo-1551218808-94e220e084d2?auto=format&fit=crop&w=300&q=80" alt="Food 2">
+        <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=300&q=80" alt="Drink 1">
+        <img src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?auto=format&fit=crop&w=300&q=80" alt="Snack 1">
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact">
+    <h1>Contact Us</h1>
+    <p>Book your table or send us a message!</p>
+
+    <div class="booking-form">
+        <h2>Online Booking</h2>
+        <label for="bname">Name:</label>
+        <input type="text" id="bname" placeholder="Write your Beautifull name">
+        <label for="bemail">Email:</label>
+        <input type="email" id="bemail" placeholder="Write email ">
+        <label for="bdate">Date:</label>
+        <input type="date" id="bdate">
+        <label for="bpeople">Number of People:</label>
+        <select id="bpeople">
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5+</option>
+        </select>
+        <button type="submit">Book Now</button>
+    </div>
+
+    <div class="contact-form" style="margin-top:40px;">
+        <h2>Send a Message</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Write your Beautifull name">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="write your email">
+        <label for="message">Message:</label>
+        <textarea id="message" rows="5" placeholder="share your POV😉"></textarea>
+        <button type="submit">Send Message</button>
+    </div>
+
+    <p style="margin-top:30px;">Phone: +91 12345 67890 | Email: cafe@example.com</p>
+</section>
+
+</body>
+</html>
